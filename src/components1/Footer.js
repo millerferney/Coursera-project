@@ -1,9 +1,8 @@
 function Footer() {
     return (
-        <div className="copyright">
-            <p>Made with love by Myself</p>
-        </div>
+      <footer>
+        <p>&copy; 2025 Event Booking Inc. | All rights reserved.</p>
+      </footer>
     );
-};
-
+  }
 export default Footer;

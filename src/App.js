@@ -1,18 +1,23 @@
-import Homepage from './Homepage';
-import react from react;
+// App.jsx
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HomePage from './Pages/HomePage';
+import BookingsPage from './Pages/BookingsPage';
+import Nav from './components/Nav';
 import './App.css';
+import react from 'react';
 
 function App() {
-
-
-
-    return (
-        
-        <div>
-             <Homepage/>
-        </div>
-       
-    )
+  return (
+    <>
+     
+        <Nav />
+        <Routes>
+          <Route path="/HomePage" element={<HomePage />} />
+          <Route path="/BookingsPage" element={<BookingsPage />} />
+        </Routes>
+    
+    </>
+  );
 }
 
 export default App;
