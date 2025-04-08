@@ -1,4 +1,4 @@
-// App.jsx
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './Pages/HomePage';
 import BookingsPage from './Pages/BookingsPage';
@@ -14,6 +14,7 @@ function App() {
         <Routes>
           <Route path="/HomePage" element={<HomePage />} />
           <Route path="/BookingsPage" element={<BookingsPage />} />
+          <Route path="/confirmed" element={<ConfirmedBooking />} />
         </Routes>
     
     </>

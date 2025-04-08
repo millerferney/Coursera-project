@@ -1,12 +1,16 @@
+import Header from '../components/Header';
 import BookingForm from '../components/BookingForm';
+import Footer from '../components/Footer';
 
-function BookingsPage() {
+function Bookings() {
   return (
-    <div className="bookings">
+    <main className="bookings">
+      <Header />
       <h2>Make a Reservation</h2>
       <BookingForm />
-    </div>
+      <Footer />
+    </main>
   );
 }
 
-export default BookingsPage;
+export default Bookings;
